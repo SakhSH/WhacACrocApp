@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/water"
+    tools:context="com.example.whacacrocapp.presentation.GameFinishedFragment">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/xl_iv_size"
+        android:layout_height="@dimen/xl_iv_size"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/xl_margin"
+        android:contentDescription="@string/result_image"
+        android:src="@drawable/ic_smile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        style="@style/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/l_margin"
+        android:layout_marginStart="@dimen/l_margin"
+        android:layout_marginTop="@dimen/xxl_margin"
+        android:layout_marginEnd="@dimen/l_margin"
+        android:gravity="center"
+        android:text="@string/welcome_title"
+        android:textSize="@dimen/xl_text_size"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+
+
+    <TextView
+        android:id="@+id/tv_result_hits"
+        style="@style/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/l_margin"
+        android:layout_marginTop="@dimen/xl_margin"
+        android:layout_marginEnd="@dimen/l_margin"
+        android:gravity="center"
+        android:text="@string/crocodile_hits"
+        android:textSize="@dimen/xl_text_size"
+        app:layout_constraintTop_toBottomOf="@id/tv_result" />
+
+    <TextView
+        android:id="@+id/tv_record_game"
+        style="@style/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/l_margin"
+        android:layout_marginTop="@dimen/xl_margin"
+        android:layout_marginEnd="@dimen/l_margin"
+        android:gravity="center"
+        android:text="@string/record_game"
+        android:textSize="@dimen/xl_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_result_hits" />
+
+    <Button
+        android:id="@+id/button_again"
+        style="@style/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/button_again"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

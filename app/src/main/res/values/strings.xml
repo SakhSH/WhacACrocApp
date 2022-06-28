@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WhacACrocApp</string>
+    <string name="welcome_logo">Welcome logo</string>
+    <string name="result_image">Result image</string>
+    <string name="welcome_title">Welcome to Whac-A-Croc</string>
+    <string name="game_rules">Game rules: You must hit the most crocodiles in 30 seconds and score at least 10 points to win</string>
+    <string name="record_game">Record game</string>
+    <string name="button_start">START</string>
+    <string name="button_again">AGAIN</string>
+    <string name="crocodile_hits">Hits:</string>
+    <string name="timer_default">00:00</string>
+    <string name="ib_crocodile">image button crocodile</string>
+    <string name="record_text">Hit record: %s</string>
+    <string name="hits_text">Hits: %d</string>
+</resources>
